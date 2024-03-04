@@ -41,6 +41,11 @@ async function fetchUser  () {
         errorORenders()
     }
 }
+
+// не получилос сделать фильтр данные с сервера  а по локальным
+// данным уже очевидо вс схоже с сортировкой поэтому не стал делать его
+
+
 async function fetchFilteredUsers  (filterParam)  {
     try {
         const response = await fetch(`https://jsonplaceholder.typicode.com/users?$name=%${filterParam}%`);
