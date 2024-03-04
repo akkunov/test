@@ -1,0 +1,140 @@
+@import url('./_reset.css');
+
+
+body{
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.user__wrapper{
+    background: #fff;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    padding: 20px;
+    width: 500px;
+    font-size: 16px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#filterinput{
+    width: 50%;
+    height: 20px;
+    padding: 8px;
+}
+
+.user__top{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    justify-content: space-between;
+    top: 30px;
+    /*background-color: black;*/
+    width: 500px;
+}
+.user__container{
+    margin-top: 90px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.user__filter{
+    width: 90px;
+    /*background-color: blue;*/
+}
+.user__filter input{
+    cursor: pointer;
+    outline: none;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    border: none;
+    height: 38px;
+    /*padding: 10px;*/
+    color:black;
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+}
+
+
+.options{
+    display: none;
+    margin-top: 10px;
+    cursor: pointer;
+    outline: none;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    border: none;
+    color:black;
+    width: 100%;
+    text-align: center;
+}
+.options.active{
+    display: flex;
+    flex-direction: column;
+
+}
+.options li{
+    padding: 5px;
+    font-size: 12px;
+    text-decoration: none;
+    list-style: none;
+    transition-duration: 200ms;
+}
+.options li:hover{
+   background-color: #bad3e8;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    padding: 10px 10px 15px 10px;
+    width: 116px;
+    height: 169px;
+    background: #fff;
+}
+
+.card__image{
+    border-radius: 5px;
+    width: 96px;
+    height: 99px;
+    background: #d9d9d9;
+}
+.card__name{
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 0%;
+    letter-spacing: -0.04em;
+    color: #000;
+}
+.card__description{
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 125%;
+    letter-spacing: -0.01em;
+    color: #979797;
+}
+
+.card__content{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px
+}
+
+@media (max-width: 650px) {
+    .user__wrapper{
+       box-shadow: none;
+        width: 100vw;
+    }
+    .user__top{
+        width: 70vw;
+    }
+}
